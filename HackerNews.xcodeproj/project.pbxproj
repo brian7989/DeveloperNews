@@ -11,6 +11,13 @@
 		D051BF082672497100AEF593 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051BF072672497100AEF593 /* ContentView.swift */; };
 		D051BF0A2672497200AEF593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D051BF092672497200AEF593 /* Assets.xcassets */; };
 		D051BF0D2672497200AEF593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D051BF0C2672497200AEF593 /* Preview Assets.xcassets */; };
+		D051BF15267251E500AEF593 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051BF14267251E500AEF593 /* NetworkManager.swift */; };
+		D051BF17267252B300AEF593 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051BF16267252B300AEF593 /* PostData.swift */; };
+		D051BF1A26725F1800AEF593 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051BF1926725F1800AEF593 /* DetailView.swift */; };
+		D051BF1E2672629400AEF593 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051BF1D2672629400AEF593 /* WebView.swift */; };
+		D051BF242672668300AEF593 /* Mac_SS.png in Resources */ = {isa = PBXBuildFile; fileRef = D051BF212672668200AEF593 /* Mac_SS.png */; };
+		D051BF252672668300AEF593 /* iPad_SS.png in Resources */ = {isa = PBXBuildFile; fileRef = D051BF222672668200AEF593 /* iPad_SS.png */; };
+		D051BF262672668300AEF593 /* iPhone_SS.png in Resources */ = {isa = PBXBuildFile; fileRef = D051BF232672668200AEF593 /* iPhone_SS.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		D051BF072672497100AEF593 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D051BF092672497200AEF593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D051BF0C2672497200AEF593 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D051BF14267251E500AEF593 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D051BF16267252B300AEF593 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		D051BF1926725F1800AEF593 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D051BF1D2672629400AEF593 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D051BF1F2672645700AEF593 /* HackerNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackerNews.entitlements; sourceTree = "<group>"; };
+		D051BF212672668200AEF593 /* Mac_SS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mac_SS.png; path = ../../../../Mac_SS.png; sourceTree = "<group>"; };
+		D051BF222672668200AEF593 /* iPad_SS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad_SS.png; path = ../../../../iPad_SS.png; sourceTree = "<group>"; };
+		D051BF232672668200AEF593 /* iPhone_SS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone_SS.png; path = ../../../../iPhone_SS.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +66,12 @@
 		D051BF042672497100AEF593 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
-				D051BF052672497100AEF593 /* HackerNewsApp.swift */,
-				D051BF072672497100AEF593 /* ContentView.swift */,
+				D051BF202672667500AEF593 /* Screenshots */,
+				D051BF1F2672645700AEF593 /* HackerNews.entitlements */,
 				D051BF092672497200AEF593 /* Assets.xcassets */,
+				D051BF052672497100AEF593 /* HackerNewsApp.swift */,
+				D051BF13267251D200AEF593 /* Models */,
+				D051BF1826725EE000AEF593 /* Views */,
 				D051BF0B2672497200AEF593 /* Preview Content */,
 			);
 			path = HackerNews;
@@ -65,6 +83,35 @@
 				D051BF0C2672497200AEF593 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D051BF13267251D200AEF593 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D051BF14267251E500AEF593 /* NetworkManager.swift */,
+				D051BF16267252B300AEF593 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D051BF1826725EE000AEF593 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D051BF072672497100AEF593 /* ContentView.swift */,
+				D051BF1926725F1800AEF593 /* DetailView.swift */,
+				D051BF1D2672629400AEF593 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D051BF202672667500AEF593 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D051BF222672668200AEF593 /* iPad_SS.png */,
+				D051BF212672668200AEF593 /* Mac_SS.png */,
+				D051BF232672668200AEF593 /* iPhone_SS.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D051BF0D2672497200AEF593 /* Preview Assets.xcassets in Resources */,
+				D051BF252672668300AEF593 /* iPad_SS.png in Resources */,
 				D051BF0A2672497200AEF593 /* Assets.xcassets in Resources */,
+				D051BF262672668300AEF593 /* iPhone_SS.png in Resources */,
+				D051BF242672668300AEF593 /* Mac_SS.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D051BF15267251E500AEF593 /* NetworkManager.swift in Sources */,
+				D051BF17267252B300AEF593 /* PostData.swift in Sources */,
 				D051BF082672497100AEF593 /* ContentView.swift in Sources */,
+				D051BF1E2672629400AEF593 /* WebView.swift in Sources */,
+				D051BF1A26725F1800AEF593 /* DetailView.swift in Sources */,
 				D051BF062672497100AEF593 /* HackerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HackerNews/HackerNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
@@ -285,6 +340,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BrianLee.HackerNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HackerNews/HackerNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
@@ -315,6 +372,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BrianLee.HackerNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
